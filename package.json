@@ -1,0 +1,35 @@
+{
+  "name": "solana-defi-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@jup-ag/api": "^6.0.27",
+    "@jup-ag/react-hook": "^6.2.0",
+    "@solana/wallet-adapter-base": "^0.9.27",
+    "@solana/wallet-adapter-react": "^0.15.39",
+    "@solana/wallet-adapter-react-ui": "^0.9.39",
+    "@solana/wallet-adapter-wallets": "^0.19.37",
+    "@solana/web3.js": "^1.95.3",
+    "framer-motion": "^10.16.4",
+    "next": "13.5.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "recharts": "^2.15.4",
+    "tailwindcss": "3.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6"
+  },
+  "description": "🧬 QazChain Solana Day — DeFi Aggregator QazChain — это стеклянный DeFi-агрегатор на Solana, созданный в рамках хакатона Solana Day by Decentrathon. Он объединяет свапы, маршруты, метрики и геймификацию в одном премиальном интерфейсе.",
+  "main": "next.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
