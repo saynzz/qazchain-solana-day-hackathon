@@ -7,7 +7,7 @@ export async function getQuote(inputMint: string, outputMint: string, amount: st
     const res = await client.quoteGet({
       inputMint,
       outputMint,
-      amount,
+      amount: Number(amount), 
       slippageBps: 100,
     });
     return res;
