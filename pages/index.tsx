@@ -11,14 +11,12 @@ import WalletButton from '../components/WalletButton';
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 text-white p-8">
-      <div className="flex justify-between items-center mb-8">
-        <div className="flex items-center gap-2 text-xl font-bold">
-          <span>🚀</span> QazChain Solana DeFi
-        </div>
-        <button className="bg-purple-600 hover:bg-purple-500 transition px-4 py-2 rounded-lg font-semibold">
-          Select Wallet
-        </button>
-      </div>
+     <div className="flex justify-between items-center mb-8">
+  <div className="flex items-center gap-2 text-xl font-bold">
+    <span>🚀</span> QazChain Solana DeFi
+  </div>
+</div>
+
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <SwapForm />
