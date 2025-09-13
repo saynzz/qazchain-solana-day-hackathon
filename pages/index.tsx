@@ -7,6 +7,7 @@ import Analytics from '../components/Analytics';
 import Lending from '../components/Lending';
 import Achievements from '../components/Achievements';
 import WalletButton from '../components/WalletButton';
+import NoSSRWalletButton from '../components/NoSSRWalletButton';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Analytics />
         <Lending />
         <Achievements />
+        <NoSSRWalletButton />
       </div>
     </div>
   );
