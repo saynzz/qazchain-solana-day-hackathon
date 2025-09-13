@@ -1,6 +1,5 @@
 import SwapForm from '../components/SwapForm';
 import Dashboard from '../components/Dashboard';
-import Earn from '../components/Earn';
 import Governance from '../components/Governance';
 import Insurance from '../components/Insurance';
 import Analytics from '../components/Analytics';
@@ -22,7 +21,6 @@ export default function Home() {
         <SwapForm />
         <WalletButton />
         <Dashboard />
-        <Earn />
         <Governance />
         <Insurance />
         <Analytics />
