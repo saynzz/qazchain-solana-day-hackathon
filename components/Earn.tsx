@@ -5,7 +5,7 @@ export default function Earn() {
   const [earnings, setEarnings] = useState(0);
 
   useEffect(() => {
-    let interval: NodeJS.Timeout;
+    let interval: ReturnType<typeof setInterval> | null = null;
     if (staked) {
       interval = setInterval(() => {
         setEarnings(prev => +(prev + 0.002).toFixed(3)); // +0.2% каждые 5 сек
