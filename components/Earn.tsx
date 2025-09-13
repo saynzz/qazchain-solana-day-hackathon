@@ -4,15 +4,17 @@ export default function Earn() {
   const [staked, setStaked] = useState(false);
   const [earnings, setEarnings] = useState(0);
 
-  useEffect(() => {
-    let interval: ReturnType<typeof setInterval> | null = null;
-    if (staked) {
-      interval = setInterval(() => {
-        setEarnings(prev => +(prev + 0.002).toFixed(3)); // +0.2% каждые 5 сек
-      }, 5000);
-    }
-    return () => clearInterval(interval);
-  }, [staked]);
+ useEffect(() => {
+  let interval: ReturnType<typeof setInterval> | null = null;
+  if (staked) {
+    interval = setInterval(() => {
+      setEarnings(prev => parseFloat((prev + 0.002).toFixed(3)));
+    }, 5000);
+  }
+  return () => {
+    if (interval) clearInterval(interval);
+  };
+}, [staked]);
 
   const handleStake = () => {
     setStaked(true);
